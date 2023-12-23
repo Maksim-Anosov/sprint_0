@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    background-color: gray;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.content-section_theme_dark {
+    background-color: #131313;
+    color: #F5F5F5;
+}
+
+.content-section_theme_bright {
+    background-color: #FEE42A;
+    color: #131313;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--yellow-bg, #FEE42A);
+}
+
+.header__logo {
+    display: block;
+    width: 78px;
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    list-style: none;
+}
+
+.header__menu-link {
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.header__menu-item_active .header__menu-link {
+    text-decoration: none;
+} 
+
+.cover {
+    padding: 30px 24px 30px 21px;
+    background-image: url(../images/cover.svg);
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.cover__title {
+    color: #FFF;
+    font-family: 'EB Garamond', serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.accent-span {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.intro {
+    padding: 30px 20px 38px;
+}
+
+.intro__heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 24px;
+}
+
+.intro__title {
+    color:#CCC;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.intro_date {
+    white-space: nowrap;
+    color: var(--text-gray, #CCC);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%
+}
+
+.intro__main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    
+    color: #F5F5F5;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px
+}
+
+.reasons {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-section__subtitle {
+    color: var(--black-bg, #131313);
+    font-family: 'EB Garamond';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+}
+
+.content-section__introduction {
+    color: var(--black-bg, #131313);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 135% */
+}
+
+.content-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 20px;
+    padding: 0 0 0 16px;
+}
+
+.content-section__list-item {
+    color: var(--black-bg, #131313);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+} 
+
+.content-section__list-accent {
+    font-weight: 700;
+}
+
+.how-to {
+    padding: 40px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.white_text {
+    color: #F5F5F5;
+}
+
+.black_text {
+    color: #131313;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 30px;
+}
+
+.card__author-name {
+    margin-top: 8px;
+}
+
+.card_theme_dark {
+    background: var(--gray-bg, #343434)
+}
+
+.card_theme_bright {
+    background: var(--yellow-bg, #FEE42A);
+}
+
+.card__author-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.card__title {
+    margin-bottom: 8px;
+    font-family: 'EB Garamond';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%; /* 29.7px */
+}
+
+.card__text {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px; /* 135% */
+}
+
+
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--yellow-bg, #FEE42A);
+}
+
+.content-section {
+    box-sizing: border-box;
+    width: 360px;
+    margin: auto;
+}
+
+.footer__links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
